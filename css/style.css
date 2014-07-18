@@ -1,0 +1,201 @@
+/*------------------------------------*\
+    $TABLE-OF-CONTENTS
+\*------------------------------------*/
+
+/**
+ * TABLE-OF-CONTENTS............You’re reading it!
+ * SITE-WIDE...............Site wide declarations (html, body, box layout model)
+ * TYPOGRAPHY...........Sets sizes and styles for type elements (h1-h3, p, a, blockquote etc.)
+ * WRAPPERS...........Biggie & Tupac set percentage widths for page, and posts.
+ * ELEMENTS...........Universal elements (island, hr, figure, image, button)
+ * NAV...........The navigation menu and the footer
+ * MEDIA-QUERIES...........Media-queries, mostly resizing font-sizes
+ */
+
+/*------------------------------------*\
+    $SITE-WIDE
+\*------------------------------------*/
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    /* Keeps page centered in all browsers regardless of content height */
+    -webkit-text-size-adjust: 100%;
+    /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+    -ms-text-size-adjust: 100%;
+    /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #f1f1f1;
+    background-color: #333;
+    height: 100%;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Alegreya', Georgia, 'Times New Roman', Times, serif;
+}
+h1, h2, h3, h4 {
+    font-family: 'Alegreya', serif;
+}
+img, embed, object, video {
+    max-width: 100%;
+}
+h1 {
+    font: normal 700 3.711rem/5.4688rem'Alegreya' serif;
+    text-align: center;
+}
+h2 {
+    font: normal 400 2.9688rem/4.375rem'Alegreya' serif;
+}
+h3 {
+    font: normal 700 2.375rem/3.5rem'Alegreya' serif;
+    margin-bottom: 1.9rem;
+}
+p {
+    font: normal 400 1.9rem/2.8rem'Alegreya Sans' sans-serif;
+    color: #333;
+    color: rgba(51, 51, 51, 0.80);
+    margin-bottom: 2.7rem;
+    text-align: left;
+}
+a {
+    font: normal 400 1.9rem/2.8rem'Alegreya Sans SC' sans-serif;
+    color: #444;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+    outline: 0;
+    cursor: pointer;
+}
+a:hover, a:focus, a:active {
+    color: #222;
+}
+.arrow-container {
+    margin:0 auto;
+    margin-top:-20px;
+    text-align: center;
+    display:none;
+}
+.arrow {
+    border-style: none;
+    border-bottom: none;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    font-size:63px;
+}
+header {
+    height: 200px;
+    margin:0 auto;
+    text-align: center;
+}
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+.big {
+    width: 66.666%;
+    max-width: 750px;
+    color: #f1f1f1;
+    margin:0 auto;
+}
+.big h1 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight:300;
+    letter-spacing: 3px;
+    padding-bottom: 2px;
+    text-align: center;
+    color:#f1f1f1;
+    font-size:5.9rem;
+    text-shadow:1px 1px 1px #000;
+}
+.big p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 300;
+    color:#f1f1f1;
+    text-align: center;
+    font-size:2.8rem;
+    line-height:1.444;
+}
+
+.section {
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    color: #efe8d8;
+    z-index:1;
+}
+.one {
+    background:rgba(0,0,0,.420);
+}
+.two {
+    background-color: #E6D4A7;
+}
+.three {
+    background-color: #36362C;
+}
+.four {
+    background-color: #f1f1f1;
+}
+.five {
+    background-color: #825534;
+}
+nav.my-sticky-element {
+    width: 100%;
+    height: 0px;
+    transition: all 0.5s ease;
+    padding-left:4%;
+    padding-right:4%;
+}
+.my-sticky-element a {
+    color: #4782c6;
+    opacity: 0;
+    line-height: 50px;
+    border-bottom: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding-top: 9px;
+    transition: all 0.3s ease;
+}
+.my-sticky-element.stuck a {
+    opacity: 1;
+}
+.stuck a:hover, .stuck a:focus, .stuck a:active {
+    color: #aa4d57;
+}
+.my-sticky-element.stuck a:first-of-type {
+    border-top: 4px solid #aa4d57;
+    color: #aa4d57;
+}
+.my-sticky-element.stuck {
+    position: fixed;
+    height: 50px;
+    opacity: 1.0;
+    width: 100%;
+    top: 0;
+    color: #222;
+    background: #f1f1f1;
+    border-bottom:4px solid #A8AD80;
+    display: inline;
+}
+#nav-logo {
+    float: left;
+    display: inline;
+    border-top:none;
+    padding-top:1px;
+    margin-left:0;
+}
+.nav-right {
+    float: right;
+    display: inline;
+}
