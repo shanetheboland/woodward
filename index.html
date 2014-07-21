@@ -9,7 +9,7 @@
     <meta name="keywords" content="woodworking, wood, working, custom, handmade, games, toys, shut the box, dart board cabinets" />
     <meta name="author" content="Shane Boland" />
     <link rel="shortcut icon" href="favicon.ico">
-    <title>This is the title</title>
+    <title>Woodward Wooden Creations</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/grid.css">
@@ -17,10 +17,9 @@
 </head>
 
 <body>
-    <div class="section one">
-        <video autoplay="autoplay" loop="loop" poster=" ">
-            <source src="video/background.mp4">
-                <source src="video/background.ogv">
+    <section class="darken">
+        <video autoplay loop poster="polina.jpg" class="bgvid">
+            <source src="video/background.mp4" type="video/mp4">
         </video>
         <header>
             <svg width="319.03" height="198.492">
@@ -31,72 +30,26 @@
             <h1>Born & Made in the Woods</h1>
             <p>We build some crazy cool stuff. Each piece is handmade with care and attention to detail. Each wooden product is an individual. We number each masterpiece by hand and sign it, so that people will know it's a Woodward original. Scroll down to give us your money.</p>
         </div>
-        <div class="arrow-container">
-            <a class="arrow" href="#two">
-                <svg class="arrow" width="75px" height="75px">
-                    <image xlink:href="img/arrow.svg" src="img/arrow.png" width="75" height="75" /></image>
-                </svg>
-            </a>
+    </section>
+    <section>
+        <div class="col-1-1 white content centered">
+            <h1 class="title">Introduction</h1>
         </div>
-    </div>
-
-    <div class="section two" id="two">
-        <nav class="my-sticky-element">
-            <a id="nav-logo">
-                <svg width="202" height="46">
-                    <image xlink:href="img/logo-noaxe.svg" src="img/logo-noaxe.png" width="202" height="46" />
-                </svg>
-            </a>
-            <div class="nav-right">
-                <a href="about.html">About</a>
-                <a href="store.html">Store</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
-        <div class="col-1-3">
-            <h1>Hello</h1>
+        <div class="col-1-3 gray image">
+            <p>Butt</p>
         </div>
-        <div class="col-2-3">
-            <h1>Hello</h1>
+        <div class="col-2-3 lightgray content">
+            <h3>Introduction</h3>
+            <p>We build some crazy cool stuff. Each piece is handmade with care and attention to detail. Each wooden product is an individual. We number each masterpiece by hand and sign it, so that people will know it's a Woodward original. Scroll down to give us your money.</p>
+            <p>We build some crazy cool stuff. Each piece is handmade with care and attention to detail. Each wooden product is an individual. We number each masterpiece by hand and sign it, so that people will know it's a Woodward original. Scroll down to give us your money.</p>
+            <p>We build some crazy cool stuff. Each piece is handmade with care and attention to detail. Each wooden product is an individual. We number each masterpiece by hand and sign it, so that people will know it's a Woodward original. Scroll down to give us your money.</p>
+            <p>We build some crazy cool stuff. Each piece is handmade with care and attention to detail. Each wooden product is an individual. We number each masterpiece by hand and sign it, so that people will know it's a Woodward original. Scroll down to give us your money.</p>
         </div>
-    </div>
+    </section>
 
-    <div class="section three">
-        <h1>Hello</h1>
-    </div>
-
-    <div class="section four">
-        <h1>Hello</h1>
-    </div>
-
-    <div class="section five">
-        <h1>Hello</h1>
-    </div>
 
     <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/waypoints-sticky.min.js"></script>
     <script src="js/script.js"></script>
-
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('.my-sticky-element').waypoint('sticky');
-    });
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
 </body>
 
 </html>

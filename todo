@@ -19,6 +19,9 @@ hand crafted
 beautiful
 toys and games
 
+fallback ogv. for video
+add fallback image in css for video
+
 each piece is an original, an individual
 
 CHANGE link color for current page
@@ -31,11 +34,21 @@ statefarm
 877-208-1487 ext. 41
 5188844460-dennis
 
+
 progressive
 518-560-3118
 143-831768
 
-Online stuff from Jan 5th until Feb 15th
-Go to chicago on Feb 16th until May 8th
 
-24,27,23,17,25
+ <nav class="my-sticky-element">
+        <a id="nav-logo">
+            <svg width="202" height="46">
+                <image xlink:href="img/logo-noaxe.svg" src="img/logo-noaxe.png" width="202" height="46" />
+            </svg>
+        </a>
+        <div class="nav-right">
+            <a href="about.html">About</a>
+            <a href="store.html">Store</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
