@@ -48,7 +48,7 @@ h1 {
     text-align: center;
 }
 h2 {
-    font: normal 400 3.3761rem/1.333'Alegreya Sans' sans-serif;
+    font: normal 300 3.3761rem/1.333'Alegreya Sans' sans-serif;
 }
 h3 {
     font: normal 700 2.5327rem/1.333'Alegreya Sans' sans-serif;
@@ -67,13 +67,27 @@ a {
 a:hover, a:focus, a:active {
     color: #757560;
 }
+.small-caps {
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+.title {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 400;
+    margin-left: 7%;
+    margin-top: 7%;
+    padding: 5px 10px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    border: 0.3rem solid white;
+}
 header {
     height: 200px;
     margin: 0 auto;
     text-align: center;
 }
 video {
-    display:block;
+    display: block;
 }
 video.bgvid {
     position: fixed;
@@ -115,7 +129,7 @@ section {
     height: 100%;
 }
 .darken {
-    background: rgba(0, 0, 0, .420);
+    background: rgba(117, 117, 96, .42);
 }
 .lightgray {
     background-color: #b7b7a7;
@@ -131,20 +145,38 @@ section {
 }
 .content {
     padding: 4.20%;
+    padding-top: 7%;
+}
+.content h2 {
+    font: normal 300 4.5003rem/1.333'Alegreya Sans' sans-serif;
+}
+.content p {
+    color: #757560;
+    font: normal 300 2.5327rem/1.333'Alegreya Sans' sans-serif;
 }
 .centered {
     text-align: center;
 }
-.title {
-    color: #36362C;
-    line-height: 0;
-}
-.image {
-    background: url(../img/wood.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+.image-introduction {
+    background: url('../img/wood1.jpg') no-repeat center center;
     background-size: cover;
+}
+.image-product {
+    background-color: #f1f1f1;
+}
+.image-product .title {
+    color:#36362C;
+    border-color:#36362C;
+}
+.image-product img {
+    margin-left: 20%;
+    margin-top: 35%;
+    width: 300px;
+}
+.image-story {
+    background: url('../img/wood2.jpg') no-repeat center center;
+    background-size: cover;
+    ;
 }
 nav.my-sticky-element {
     width: 100%;
