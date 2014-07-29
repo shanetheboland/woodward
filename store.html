@@ -18,81 +18,32 @@
 
 <body>
     <div class="section-1">
-        <header>
-            <div class="logo">
-                <a href="/" class="logo">
-                    <svg width="608" height="100">
-                        <image xlink:href="img/logo-text.svg" src="img/logo-text.png" width="608" height="400" />
-                    </svg>
-                </a>
-            </div>
-            <!--div class="header-right">
-            <a href="http://twitter.com"><svg width="28.6" height="28.6">
-                      <image xlink:href="img/twitter.svg" src="img/twitter.png" width="28.6" height="28.6" />
-                    </svg></a>
-                <a href="http://facebook.com"><svg width="28.6" height="28.6">
-                      <image xlink:href="img/facebook.svg" src="img/facebook.png" width="28.6" height="28.6" />
-                    </svg></a>
-                    <a id="cart" href="#">Cart: 2 Items</a>
-            </div-->
-        </header>
-        <div class="overlay">
-            <h1>Hand-Crafted Wooden Toys & Games</h1>
-            <h3>We build some crazy cool stuff. Each piece is handmade with care and attention to detail. Each toy and game is an individual. We number each masterpiece by hand and sign it, so that people will know it's a Ward of the Wood original. Scroll down to give us your money.</h3>
-            <a class="arrow">
-                <img class="arrow" src="img/arrow.svg" width="50px" height="50px" alt="Scroll Down">
-            </a>
-        </div>
-        <video autoplay muted loop poster="video/bulb-fallback.png" id="bgvid">
-            <source src="video/alex.m4v" type="video/mp4">
-        </video>
+        <h1>The Store</h1>
+        <p style="text-align:center">Working on it.</p>
     </div>
-    <nav class="my-sticky-element">
-        <div class="header-right">
-            <a id="about-link" class="nav-link" href="about.html">About</a>
-            <a id="store-link" class="nav-link" href="store.html">Store</a>
-            <a id="contact-link" class="nav-link" href="contact.html">Contact</a>
-        </div>
-    </nav>
-    <div class="section-2">
-        <div class="col-1-3 left">
-            <p>.</p>
-        </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/waypoints-sticky.min.js"></script>
 
-        <div class="col-2-3 right">
-            <p>.</p>
-        </div>
-        <div class="section-3">
-            <div class="col-2-3 left">
-                <p>.</p>
-            </div>
-            <div class="col-1-3 right">
-                <p>.</p>
-            </div>
-        </div>
-        <script src="js/jquery-1.11.1.min.js"></script>
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/waypoints-sticky.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.my-sticky-element').waypoint('sticky');
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
 
-        <script type="text/javascript">
-        $(document).ready(function() {
-            $('.my-sticky-element').waypoint('sticky');
-        });
-        </script>
-        <script>
-        $(document).ready(function() {
+        // Get the current URL
+        var currentUrl = window.location.href;
 
-            // Get the current URL
-            var currentUrl = window.location.href;
+        // Get the span you want with a combination class and attribute and child jQuery selector
+        var currentMenuItem = $(".main-nav-link[href='" + currentUrl + "'] > .main-nav-item");
 
-            // Get the span you want with a combination class and attribute and child jQuery selector
-            var currentMenuItem = $(".main-nav-link[href='" + currentUrl + "'] > .main-nav-item");
+        // Then add your class
+        currentMenuItem.addClass("current");
 
-            // Then add your class
-            currentMenuItem.addClass("current");
-
-        });
-        </script>
+    });
+    </script>
 </body>
 
 </html>

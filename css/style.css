@@ -67,8 +67,18 @@ a {
 a:hover, a:focus, a:active {
     color: #757560;
 }
+b {
+    font-weight: 700;
+}
 .small-caps {
     font-family: 'Alegreya Sans SC', sans-serif;
+}
+ul {
+    list-style-type:none;
+    padding-left:0;
+}
+li {
+font: normal 300 2.332rem/1.333'Alegreya Sans' san-serif;
 }
 .title {
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -128,11 +138,20 @@ video.bgvid {
 section {
     height: 100%;
 }
+.section-last {
+    display:block;
+    width:100%;
+    height:250px;
+    padding:2%;
+}
 .darken {
     background: rgba(117, 117, 96, .42);
 }
-.lightgray {
+.midgray {
     background-color: #b7b7a7;
+}
+.lightgray {
+    background-color: #d8d8d8;
 }
 .white {
     background-color: #f1f1f1;
@@ -147,12 +166,24 @@ section {
     padding: 4.20%;
     padding-top: 7%;
 }
+.faq {
+    padding:4.20;
+}
 .content h2 {
-    font: normal 300 4.5003rem/1.333'Alegreya Sans' sans-serif;
+    font: normal 300 5rem/1.333'Alegreya Sans' sans-serif;
 }
 .content p {
     color: #757560;
-    font: normal 300 2.5327rem/1.333'Alegreya Sans' sans-serif;
+    font: normal 300 2.332rem/1.333'Alegreya Sans' san-serif;
+}
+.content p span {
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+.single-row-content {
+    padding: 2.1%;
+}
+.single-row-content h1 {
+    line-height:0;
 }
 .centered {
     text-align: center;
@@ -168,58 +199,34 @@ section {
     color:#36362C;
     border-color:#36362C;
 }
-.image-product img {
+.example-product {
     margin-left: 20%;
     margin-top: 35%;
     width: 300px;
+}
+.face {
+    margin-left:20%;
+    width:300px;
+    margin-top:25%;
 }
 .image-story {
     background: url('../img/wood2.jpg') no-repeat center center;
     background-size: cover;
     ;
 }
-nav.my-sticky-element {
-    width: 100%;
-    height: 50px;
-    background-color: #36362C;
-    transition: all 0.5s ease;
-    padding-left: 4%;
-    padding-right: 4%;
-    border-bottom: 4px solid #5D917D;
-    z-index: 99;
+.store-link {
+    outline:none;
+    border-bottom:none;
 }
-.my-sticky-element a {
-    color: #f1f1f1;
-    opacity: 0;
-    line-height: 50px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-left: 20px;
-    padding-top: 9px;
-    border: none;
-    transition: all 0.3s ease;
+.button {
+    background-color:#5d917d;
+    padding:1rem 3rem;
+    border-radius:2px;
+    color:#f1f1f1;
 }
-.my-sticky-element.stuck a {
-    opacity: 1;
-}
-.my-sticky-element.stuck {
-    position: fixed;
-    width: 100%;
-    border-top: none;
-    top: 0;
-    color: #222;
-    background: #36362C;
-    display: inline;
-}
-#nav-logo {
-    float: left;
-    display: inline;
-    border-top: none;
-    padding-top: 1px;
-    margin-left: 0;
-    height: 50px;
-}
-.nav-right {
-    float: right;
-    display: inline;
+.button:hover, .button:focus, .button:active {
+    background-color:#538170;
+    color:#f1f1f1;
+    padding:1.5rem 3.5rem;
+    transition:all 0.5s ease;
 }
