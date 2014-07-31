@@ -5,6 +5,7 @@
   Author - Dallas Bass
   Site - dallasbass.com
 */
+/*Modifications have been made to this document. It is not the original Simple Grid*/
 
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
@@ -156,8 +157,6 @@ body {
         float: none;
         margin-left: 0px;
         margin-right: 0px;
-        margin-top: 10px;
-        margin-bottom: 10px;
         padding-left: 0px;
         padding-right: 10px;
         /* column-space */
@@ -168,7 +167,6 @@ body {
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px;
-        margin-bottom: 10px;
         padding-left: 0px;
         padding-right: 10px;
         /* column-space */
