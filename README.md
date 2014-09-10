@@ -1,8 +1,3 @@
-#QUICKSTART-HTML  
-####*A quick way to start a new HTML project*  
+#Woodward Handmade Creations
 
-####Includes:  
--css, js, and img folders  
--normalize.css and style.css (for custom styling)  
--script.js (for custom scripts)  
--Proper meta tags and HTML5 page structure  
+A site for a client who makes some AWESOME things out of wood. Very high-quality craftsmanship.
