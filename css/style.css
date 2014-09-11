@@ -332,9 +332,6 @@ footer a {
     .big p {
         font-size: 2.2rem;
     }
-    section {
-        height: 150%;
-    }
 }
 @media (max-width: 350px) {
     .logo {
