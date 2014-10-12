@@ -1,5 +1,3 @@
-use jekyll for site. add products as blog posts
-
 BLACK #36362C
 BLUE #5D917D 
 GREEN #A8AD80 
@@ -8,36 +6,6 @@ BROWN #825534
 GRAY #757560
 WHITE #f1f1f1
 LIGHTGRAY #b7b7a7
-
-
-individually
-hand crafted 
-beautiful
-toys and games
-
-fallback ogv. for video
-add fallback image in css for video
-
-each piece is an original, an individual
-
-CHANGE link color for current page
-
-fix arrow link
-remove fonts not being used
-
- <nav class="my-sticky-element">
-        <a id="nav-logo">
-            <svg width="202" height="46">
-                <image xlink:href="img/logo-noaxe.svg" src="img/logo-noaxe.png" width="202" height="46" />
-            </svg>
-        </a>
-        <div class="nav-right">
-            <a href="about.html">About</a>
-            <a href="store.html">Store</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
-
 
     Boxofdiamonds-$20
     ShuttheBox w/ Pattern-$150  w/ Logo-$125
